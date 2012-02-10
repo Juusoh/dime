@@ -13,7 +13,7 @@
         </script>
         <script type="text/javascript">
             function initialize() {
-                latlng = new google.maps.LatLng(60.171297, 24.940209);
+                latlng = new google.maps.LatLng(60.171297, 24.940209); // Helsingin keskusta
                 var myOptions = {
                     zoom: 15,
                     center: latlng,
@@ -32,7 +32,6 @@
 
             function haeKirjastot() {
                 $.getJSON("http://www.hel.fi/palvelukarttaws/rest/v1/service/8551?callback=?", function(json) {
-                          // nyt json.unit_ids sisältää taulukon kirjasto-idejä
                     $.each(json.unit_ids, function(index, id) {
                         haeKirjasto(id);
                     });

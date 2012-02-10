@@ -3,11 +3,10 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<LINK rel="stylesheet" href="style.css" type="text/css">
-		<script type="text/javascript"><!--
+		<script type="text/javascript">
 			window.addEventListener('load', alusta, false);
 			
 			function alusta() {
-			  // Get the canvas element.
 				var circles = document.querySelectorAll("circle");
 				for(var i = 0; i < circles.length; ++i) {
 					circles[i].addEventListener("click", palluraaKlikattu);
@@ -20,8 +19,6 @@
 
 				e.target.setAttribute("r", parseInt(e.target.getAttribute("r")) + 10);
 			};
-
-			    // -->
 		</script>
 		<title>Palloja</title>
 	</head>
